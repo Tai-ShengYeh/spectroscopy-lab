@@ -178,6 +178,7 @@ table.cmp td:first-child{font-weight:900;color:var(--ink)}
   .grid2,.grid3,.grid4,.map,.qopt{grid-template-columns:1fr}
   .bins{grid-template-columns:1fr 1fr}.lib{grid-template-columns:1fr 1fr}
   #hint,#mins{display:none}
+  .embar{font-size:10.5px}
   .anim .stage{max-height:none}
   .steps{gap:8px}.steps .arrow{padding-bottom:60px}
   table.cmp{font-size:13px}table.cmp td,table.cmp th{padding:6px 5px}

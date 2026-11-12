@@ -157,7 +157,7 @@ $$('.anim').forEach(box => {
 
 /* ---------- 波長探險 ---------- */
 (() => {
-  const segs = [['X 光', -2, 1, '#64748b'], ['紫外線', 1, 2.602, '#7c3aed'], ['', 2.602, 2.845, 'linear-gradient(90deg,#bf5af2,#0a84ff,#34c759,#ffd60a,#ff3b30)'], ['紅外線', 2.845, 6, '#b91c1c'], ['微波', 6, 9, '#78350f']];
+  const segs = [['X 光', -2, 1, '#64748b'], ['紫外線', 1, 2.602, '#7c3aed'], ['', 2.602, 2.845, 'linear-gradient(90deg,#bf5af2,#0a84ff,#34c759,#ffd60a,#ff3b30)'], ['紅外線', 2.845, 6, '#b91c1c'], ['微波・無線電波', 6, 9, '#78350f']];
   const bar = $('#embar');
   bar.innerHTML = segs.map(s => `<div style="width:${(s[2] - s[1]) / 11 * 100}%;background:${s[3]}">${s[0]}</div>`).join('') + '<div class="mk" id="wlMk"></div>';
   const info = [
@@ -166,12 +166,13 @@ $$('.anim').forEach(box => {
     [2.845, '可見光', '🌈 彩虹，還有你看到的所有顏色。', '🔎 今天的案子：薑黃素驗硼砂（550 奈米）'],
     [3.398, '近紅外光', '📱 電視遙控器、手機臉部辨識。', '🔎 今天的案子：雞蛋新鮮度（740–1070 奈米）'],
     [6, '紅外線', '🌡️ 額溫槍、熱像儀——溫熱的物體都會放出紅外線。', '🔎 今天的案子：紅外光譜看分子指紋'],
-    [9.01, '微波', '🍱 微波爐、Wi-Fi、手機訊號。', '（今天的案子用不到它）']
+    [8.477, '微波', '🍱 微波爐、Wi-Fi、手機訊號。', '🔎 再往右一點，就是核磁共振（NMR）用的波段 →'],
+    [9.01, '無線電波（緊接在微波後面）', '📻 廣播、電視訊號；醫院的磁振造影（MRI）也用它。', '🔎 相關技術：核磁共振（NMR）——讓氫原子核共振，看出分子結構，例如分辨咖啡真偽']
   ];
   const fmt = nm => nm < 1 ? nm.toFixed(2) + ' 奈米' : nm < 1e3 ? Math.round(nm) + ' 奈米' : nm < 1e6 ? (nm / 1e3).toFixed(nm < 1e4 ? 1 : 0) + ' 微米' : nm < 1e7 ? (nm / 1e6).toFixed(1) + ' 毫米' : nm < 1e9 ? (nm / 1e7).toFixed(nm < 1e8 ? 1 : 0) + ' 公分' : '1 公尺';
   const r = $('#wlRange');
   function upd() {
-    const L = -2 + r.value / 1000 * 11, nm = Math.pow(10, L); const it = info.find(x => L < x[0]) || info[5];
+    const L = -2 + r.value / 1000 * 11, nm = Math.pow(10, L); const it = info.find(x => L < x[0]) || info[info.length - 1];
     $('#wlMk').style.left = (r.value / 10) + '%';
     $('#wlVal').textContent = '波長 ' + fmt(nm); $('#wlBand').textContent = it[1]; $('#wlLife').textContent = it[2]; $('#wlCase').textContent = it[3];
     const sw = $('#wlSw'); const vis = it[1] === '可見光';
