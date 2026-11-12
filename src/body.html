@@ -1,0 +1,455 @@
+<div id="progress"></div>
+<div id="section-tag"></div>
+<div id="topright"><span id="mins"></span><button class="iconbtn" id="tocBtn">☰ 目錄</button><button class="iconbtn" id="fsBtn">⛶ 全螢幕</button></div>
+<div id="hint">← → 換頁 · F 全螢幕 · M 目錄</div>
+<div id="nav"><span><b id="pg">1</b> / <span id="pgAll"></span></span><button id="prev" aria-label="上一頁">‹</button><button id="next" aria-label="下一頁">›</button></div>
+<div id="toc"><div class="box"><h3>課程目錄</h3><div class="grid" id="tocGrid"></div></div></div>
+
+<!-- ============ 引起動機 ============ -->
+<section class="slide" data-section="引起動機" data-min="1" data-name="封面">
+ <div class="slide-inner">
+  <div class="kicker">高中彈性學習 · 食品科學 × 光學</div>
+  <h1 class="title">光的偵探社<br><span class="accent">光譜分析與應用</span></h1>
+  <div class="rainbow"></div>
+  <p class="sub">不切開、不嚐味道——只靠一道光，就能知道食物裡藏了什麼。</p>
+  <div class="cover-meta"><span class="pill a">2 節課 · 2 × 50 分</span><span class="pill b">4 段語音動畫</span><span class="pill g">5 個小遊戲 ＋ 結業測驗</span><span class="pill">國立潮州高中</span></div>
+  <p class="small" style="margin-top:14px">授課：葉泰聖 · 教材改編自 <a href="https://tai-shengyeh.github.io/" target="_blank" rel="noopener">tai-shengyeh.github.io</a> 光譜 × 食品分析系列課程</p>
+ </div>
+</section>
+
+<section class="slide" data-section="引起動機" data-min="4" data-name="三個懸案">
+ <div class="slide-inner">
+  <div class="kicker">先想一想</div>
+  <h2 class="title">不切開、不嚐，<span class="accent2">怎麼知道？</span></h2>
+  <div class="grid3">
+   <div class="card"><div class="emoji">🍡</div><h4>懸案一：魚丸</h4><p>這顆魚丸特別 Q 彈、又特別耐放。它有沒有偷加違法的<b>硼砂</b>？</p></div>
+   <div class="card"><div class="emoji">🍼</div><h4>懸案二：奶粉</h4><p>一罐白色的奶粉，裡面有沒有被摻進<b>三聚氰胺</b>？</p></div>
+   <div class="card"><div class="emoji">🥚</div><h4>懸案三：雞蛋</h4><p>不打破蛋殼，你能知道這顆蛋已經<b>放了幾天</b>嗎？</p></div>
+  </div>
+  <div class="gate"><button class="btn primary" data-reveal="r2">💬 和旁邊同學討論 1 分鐘，再按這裡揭曉 →</button></div>
+  <div class="reveal card" id="r2"><p class="body">三個案子的答案都一樣：<b class="hl">用光照一下。</b>科學家讓光穿過或打在食物上，再量「光被改變了多少」，幾秒鐘就能破案，而且食物常常完好如初。</p></div>
+ </div>
+</section>
+
+<section class="slide" data-section="引起動機" data-min="2" data-name="今日任務地圖">
+ <div class="slide-inner">
+  <div class="kicker">核心命題</div>
+  <h2 class="title">每種物質，都有一張<span class="accent">光的指紋</span></h2>
+  <p class="sub">今天你是「光的偵探社」實習探員，要通過五個關卡，拿到結業徽章。</p>
+  <div class="map">
+   <div class="stop"><i>🌈</i><b>關卡 1　光是什麼</b><span>第一節 · 動畫 ＋ 波段歸位</span></div>
+   <div class="stop"><i>🧪</i><b>關卡 2　吸收破案</b><span>第一節 · 硼砂檢量線闖關</span></div>
+   <div class="stop"><i>🕺</i><b>關卡 3　分子指紋</b><span>第二節 · 拉曼指紋比對</span></div>
+   <div class="stop"><i>⚛️</i><b>關卡 4　元素指紋</b><span>第二節 · XRF 元素解碼</span></div>
+   <div class="stop"><i>🏅</i><b>關卡 5　結業挑戰</b><span>第二節 · 辦案派工 ＋ 測驗</span></div>
+  </div>
+ </div>
+</section>
+
+<!-- ============ 維持注意 ============ -->
+<section class="slide" data-section="維持注意" data-min="3" data-name="🎬 動畫① 光的分身術">
+ <div class="slide-inner">
+  <div class="kicker">語音動畫 ① · 關卡 1</div>
+  <h2 class="h2">光的分身術：白光裡藏了什麼？</h2>
+  <div class="anim" data-anim="a1">
+   <svg class="stage" viewBox="0 0 900 380" role="img" aria-label="白光經三稜鏡分成光譜的動畫">
+    <defs>
+     <linearGradient id="rbV" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff3b30"/><stop offset=".2" stop-color="#ff9500"/><stop offset=".4" stop-color="#ffd60a"/><stop offset=".55" stop-color="#34c759"/><stop offset=".75" stop-color="#0a84ff"/><stop offset=".9" stop-color="#5e5ce6"/><stop offset="1" stop-color="#bf5af2"/></linearGradient>
+     <linearGradient id="rbH" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#bf5af2"/><stop offset=".2" stop-color="#0a84ff"/><stop offset=".45" stop-color="#34c759"/><stop offset=".65" stop-color="#ffd60a"/><stop offset=".82" stop-color="#ff9500"/><stop offset="1" stop-color="#ff3b30"/></linearGradient>
+    </defs>
+    <g data-from="0" data-to="3">
+     <circle cx="62" cy="150" r="26" fill="#ffd84a" class="pulse"/>
+     <line x1="96" y1="150" x2="372" y2="150" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+     <text x="170" y="132" class="sm">白光</text>
+    </g>
+    <g data-from="1" data-to="3">
+     <polygon points="330,215 395,85 460,215" fill="rgba(160,200,255,.2)" stroke="#bcd3ff" stroke-width="2"/>
+     <text x="368" y="240" class="sm">三稜鏡</text>
+     <g stroke-width="5" stroke-linecap="round" class="draw">
+      <line x1="420" y1="150" x2="610" y2="78" stroke="#ff3b30"/><line x1="420" y1="150" x2="610" y2="100" stroke="#ff9500"/>
+      <line x1="420" y1="150" x2="610" y2="122" stroke="#ffd60a"/><line x1="420" y1="150" x2="610" y2="146" stroke="#34c759"/>
+      <line x1="420" y1="150" x2="610" y2="170" stroke="#0a84ff"/><line x1="420" y1="150" x2="610" y2="194" stroke="#5e5ce6"/>
+      <line x1="420" y1="150" x2="610" y2="218" stroke="#bf5af2"/>
+     </g>
+     <rect x="612" y="68" width="20" height="160" rx="5" fill="url(#rbV)"/>
+     <text x="598" y="54" class="lbl">光譜</text>
+    </g>
+    <g data-from="2" data-to="3">
+     <path data-wave="660,96,210,15,60" fill="none" stroke="#ff3b30" stroke-width="4"/>
+     <text x="660" y="136" class="sm">紅光　波長約 700 奈米（長）</text>
+     <path data-wave="660,186,210,15,34" fill="none" stroke="#bf5af2" stroke-width="4"/>
+     <text x="660" y="226" class="sm">紫光　波長約 400 奈米（短）</text>
+    </g>
+    <g data-from="3" data-to="3">
+     <rect x="40" y="282" width="164" height="44" fill="#64748b"/><rect x="204" y="282" width="164" height="44" fill="#7c3aed"/>
+     <rect x="368" y="282" width="164" height="44" fill="url(#rbH)"/><rect x="532" y="282" width="164" height="44" fill="#b91c1c"/>
+     <rect x="696" y="282" width="164" height="44" fill="#78350f"/>
+     <g text-anchor="middle" class="lbl"><text x="122" y="310">X 光</text><text x="286" y="310">紫外線</text><text x="450" y="310" style="fill:#0d1024">可見光</text><text x="614" y="310">紅外線</text><text x="778" y="310">微波</text></g>
+     <text x="40" y="352" class="sm">← 波長短、能量高</text><text x="860" y="352" class="sm" text-anchor="end">波長長、能量低 →</text>
+     <rect x="366" y="278" width="168" height="52" fill="none" stroke="#fff" stroke-width="3" rx="4"/>
+     <text x="450" y="270" class="sm" text-anchor="middle">眼睛只看得到這一段</text>
+    </g>
+    <g data-from="4">
+     <text x="70" y="212" font-size="64">🔦</text>
+     <line x1="150" y1="190" x2="290" y2="190" stroke="#fff" stroke-width="7" stroke-linecap="round" class="draw"/>
+     <text x="300" y="218" font-size="80">🍎</text>
+     <line x1="400" y1="190" x2="500" y2="190" stroke="#ffb199" stroke-width="5" stroke-linecap="round" stroke-dasharray="4 10"/>
+     <rect x="506" y="150" width="54" height="80" rx="10" fill="#1f7cf2"/><text x="533" y="250" class="sm" text-anchor="middle">偵測器</text>
+     <rect x="600" y="80" width="270" height="210" rx="12" fill="#151a3d" stroke="#4a5680"/>
+     <path data-curve="615,270,240,170|.15:.35:.05,.38:.85:.06,.6:.5:.04,.82:.7:.07" fill="none" stroke="#5ee0ff" stroke-width="4" class="draw"/>
+     <text x="735" y="312" class="sm" text-anchor="middle">波長 →</text>
+     <text x="735" y="62" class="lbl" text-anchor="middle">這張圖就是「光譜」</text>
+     <text x="330" y="120" class="sm" text-anchor="middle">光照進去</text><text x="450" y="170" class="sm" text-anchor="middle">被改變的光</text>
+    </g>
+   </svg>
+   <div class="cap"></div><div class="ctl"></div>
+  </div>
+ </div>
+</section>
+
+<section class="slide" data-section="維持注意" data-min="4" data-name="互動：波長探險">
+ <div class="slide-inner">
+  <div class="kicker">動手拉拉看 · 關卡 1</div>
+  <h2 class="h2">波長探險：拖動滑桿，逛一圈電磁波</h2>
+  <div class="card">
+   <div class="embar" id="embar"></div>
+   <input type="range" id="wlRange" min="0" max="1000" value="560" aria-label="波長滑桿">
+   <div class="grid2" style="margin-top:8px;align-items:start">
+    <div class="row" style="flex-wrap:nowrap"><div class="swatch" id="wlSw"></div><div><div class="readout" id="wlVal"></div><div class="h2" id="wlBand" style="margin:0"></div></div></div>
+    <div><p class="body" id="wlLife"></p><p class="body accent" id="wlCase" style="font-weight:700"></p></div>
+   </div>
+  </div>
+  <p class="small" style="margin-top:10px">👀 色條中間那一小條彩色，就是全部的可見光——其他的光眼睛都看不到。</p>
+  <p class="small" style="margin-top:4px">💬 討論：哪一段波長最短？為什麼 X 光能穿透行李箱，可見光卻不行？（提示：波長越短，能量越高）</p>
+ </div>
+</section>
+
+<section class="slide" data-section="維持注意" data-min="4" data-name="🎮 遊戲① 波段歸位">
+ <div class="slide-inner"><div class="kicker">小遊戲 ① · 關卡 1</div><h2 class="h2">波段歸位：這件事用的是哪一種光？</h2><div id="g1"></div></div>
+</section>
+
+<section class="slide" data-section="維持注意" data-min="3" data-name="🎬 動畫② 光遇到物質">
+ <div class="slide-inner">
+  <div class="kicker">語音動畫 ② · 關卡 2</div>
+  <h2 class="h2">光遇到物質的三種反應</h2>
+  <div class="anim" data-anim="a2">
+   <svg class="stage" viewBox="0 0 900 380" role="img" aria-label="吸收、散射、放射三種反應的動畫">
+    <defs>
+     <marker id="mG" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="11" refY="8" orient="auto"><path d="M0,0 L16,8 L0,16 z" fill="#34c759"/></marker>
+     <marker id="mO" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="11" refY="8" orient="auto"><path d="M0,0 L16,8 L0,16 z" fill="#ff9500"/></marker>
+     <marker id="mY" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="11" refY="8" orient="auto"><path d="M0,0 L16,8 L0,16 z" fill="#d9f99d"/></marker>
+    </defs>
+    <g data-from="0" data-to="0"><text x="450" y="205" text-anchor="middle" style="font-size:58px;font-weight:900">💡 光 ＋ 物質 ＝ ？</text></g>
+    <g data-from="1">
+     <text x="150" y="44" text-anchor="middle" class="lbl" style="font-size:24px">① 吸收</text>
+     <ellipse cx="150" cy="238" rx="82" ry="40" fill="#22a559"/><path d="M72 238 Q150 222 228 238" stroke="#0f7a3d" stroke-width="3" fill="none"/>
+     <line x1="52" y1="78" x2="112" y2="204" stroke="#ff3b30" stroke-width="6" stroke-linecap="round"/><text x="100" y="224" style="font-size:20px;fill:#ff3b30">✕</text>
+     <line x1="112" y1="70" x2="148" y2="196" stroke="#0a84ff" stroke-width="6" stroke-linecap="round"/><text x="140" y="218" style="font-size:20px;fill:#7fc0ff">✕</text>
+     <line x1="176" y1="70" x2="186" y2="200" stroke="#34c759" stroke-width="6" stroke-linecap="round"/>
+     <line x1="186" y1="200" x2="262" y2="110" stroke="#34c759" stroke-width="6" stroke-linecap="round" marker-end="url(#mG)"/>
+     <text x="258" y="98" font-size="30">👁</text>
+     <text x="150" y="306" text-anchor="middle" class="sm">紅光、藍光被吃掉，綠光反射</text>
+    </g>
+    <g data-from="2">
+     <line x1="300" y1="30" x2="300" y2="330" stroke="#2a3160" stroke-width="2"/>
+     <text x="450" y="44" text-anchor="middle" class="lbl" style="font-size:24px">② 散射</text>
+     <path data-wave="318,200,96,10,24" fill="none" stroke="#34c759" stroke-width="4"/>
+     <circle cx="440" cy="200" r="20" fill="#8fb3ff"/><circle cx="468" cy="182" r="13" fill="#ff8fab"/><circle cx="466" cy="222" r="13" fill="#ff8fab"/>
+     <g stroke="#34c759" stroke-width="4" stroke-linecap="round" marker-end="url(#mG)"><line x1="452" y1="160" x2="470" y2="96"/><line x1="490" y1="200" x2="570" y2="200"/><line x1="430" y1="232" x2="400" y2="282"/><line x1="424" y1="170" x2="388" y2="116"/></g>
+     <line x1="486" y1="230" x2="560" y2="280" stroke="#ff9500" stroke-width="5" stroke-linecap="round" stroke-dasharray="3 9" marker-end="url(#mO)" class="pulse"/>
+     <text x="512" y="308" class="sm" style="fill:#ffb347">拉曼！能量變了一點點</text>
+     <text x="450" y="74" text-anchor="middle" class="sm">大部分的光顏色不變</text>
+    </g>
+    <g data-from="3">
+     <line x1="600" y1="30" x2="600" y2="330" stroke="#2a3160" stroke-width="2"/>
+     <text x="750" y="44" text-anchor="middle" class="lbl" style="font-size:24px">③ 放射</text>
+     <path data-wave="616,200,84,10,14" fill="none" stroke="#bf5af2" stroke-width="4"/><text x="616" y="176" class="sm">能量進來</text>
+     <circle cx="752" cy="200" r="34" fill="#d9f99d" class="pulse"/>
+     <g stroke="#d9f99d" stroke-width="4" stroke-linecap="round" marker-end="url(#mY)"><line x1="752" y1="156" x2="752" y2="96"/><line x1="790" y1="176" x2="842" y2="136"/><line x1="794" y1="216" x2="850" y2="246"/><line x1="752" y1="244" x2="752" y2="296"/></g>
+     <text x="752" y="322" text-anchor="middle" class="sm">自己發出光來</text>
+    </g>
+    <g data-from="4"><rect x="150" y="334" width="600" height="38" rx="19" fill="#1f7cf2"/><text x="450" y="360" text-anchor="middle" class="lbl">三種反應 → 三種不同的「光譜指紋」</text></g>
+   </svg>
+   <div class="cap"></div><div class="ctl"></div>
+  </div>
+ </div>
+</section>
+
+<section class="slide" data-section="維持注意" data-min="4" data-name="互動：顏色實驗室">
+ <div class="slide-inner">
+  <div class="kicker">動手點點看 · 關卡 2</div>
+  <h2 class="h2">顏色實驗室：你看到的顏色＝沒被吃掉的光</h2>
+  <div class="grid2">
+   <div>
+    <div class="chips" id="dyeBtns"></div>
+    <div class="card" style="margin-top:12px"><div class="row" style="flex-wrap:nowrap"><div class="swatch" id="dyeSw"></div><div><p class="body" id="dyeEat"></p><p class="body" id="dyeSee" style="font-weight:700;color:var(--ink)"></p></div></div></div>
+    <p class="small" style="margin-top:10px">💬 猜猜看：如果一杯飲料把「所有顏色」的光都吃掉，它看起來會是什麼顏色？</p>
+   </div>
+   <div class="card"><svg id="dyeSvg" viewBox="0 0 520 300"></svg><p class="note">示意圖：吸收峰位置為約略值，峰形經過簡化。</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="slide" data-section="維持注意" data-min="4" data-name="互動：越濃越深">
+ <div class="slide-inner">
+  <div class="kicker">動手拉拉看 · 關卡 2</div>
+  <h2 class="h2">越濃，顏色越深：比爾定律</h2>
+  <div class="grid2">
+   <div>
+    <div class="row" style="flex-wrap:nowrap;gap:22px">
+     <div class="tube"><i id="beerTube"></i></div>
+     <div><div class="small">濃度</div><div class="readout" id="beerC"></div><div class="small" style="margin-top:6px">吸光度（被吃掉的光有多少）</div><div class="readout" id="beerA" style="color:var(--accent-2)"></div></div>
+    </div>
+    <input type="range" id="beerRange" min="0" max="10" step="0.5" value="2" aria-label="濃度滑桿" style="margin-top:10px">
+    <p class="body" style="margin-top:6px">濃度變 2 倍，吸光度也變 <b class="hl">2 倍</b>——兩者成正比。所以只要量吸光度，就能反推濃度。這條直線叫做<b class="hl">檢量線</b>。</p>
+   </div>
+   <div class="card"><svg id="beerSvg" viewBox="0 0 520 330"></svg><p class="note">檢量線採用課程網站硼酸教材的示意公式：吸光度 = 0.095 × 濃度（µg/mL）。</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="slide" data-section="維持注意" data-min="5" data-name="案例① 硼砂偵探">
+ <div class="slide-inner">
+  <div class="kicker">案例 ① · 可見光吸收 · 懸案一</div>
+  <h2 class="h2">硼砂偵探：讓看不見的硼，變成紅色</h2>
+  <div class="grid2">
+   <div>
+    <p class="body">硼砂能讓油麵、年糕、魚丸更 Q 彈、更耐放，但它在體內會累積，<b class="hl">台灣禁止用於食品</b>。</p>
+    <p class="body" style="margin-top:8px">問題是：硼砂溶在食物裡是無色的。怎麼辦？請薑黃裡的黃色色素——<b>薑黃素</b>來幫忙。</p>
+    <div class="row" style="margin-top:12px"><button class="btn primary" id="boricNext">▶ 下一步</button><button class="btn" id="boricReset">↺ 重來</button></div>
+    <p class="body" id="boricTxt" style="margin-top:10px;min-height:4.8em"></p>
+   </div>
+   <div class="card">
+    <div class="steps">
+     <div class="st on" data-st="0"><div class="tube"><i style="background:#f6c915"></i></div>薑黃素<br><b>黃色</b></div><div class="arrow">→</div>
+     <div class="st" data-st="1"><div class="tube"><i style="background:#d81e5b"></i></div>＋硼酸（酸性）<br><b>玫瑰紅</b></div><div class="arrow">→</div>
+     <div class="st" data-st="2"><div class="tube"><i style="background:#1d5c4a"></i></div>＋氨水（鹼性）<br><b>墨綠</b></div>
+    </div>
+    <p class="note" style="text-align:center">食藥署建議檢驗方法 TFDAA0086（薑黃素分光光度法）· 定量極限 300 mg/kg</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="slide" data-section="維持注意" data-min="8" data-name="🎮 遊戲② 檢量線闖關">
+ <div class="slide-inner"><div class="kicker">小遊戲 ② · 關卡 2</div><h2 class="h2">檢量線闖關：這份檢體有沒有硼砂？</h2><div id="g2"></div></div>
+</section>
+
+<section class="slide" data-section="維持注意" data-min="3" data-name="第一節小結">
+ <div class="slide-inner">
+  <div class="kicker">第一節小結 · 下課前 3 分鐘</div>
+  <h2 class="title">上半場，你已經學會</h2>
+  <div class="grid3">
+   <div class="card"><div class="emoji">🌈</div><h4>光譜</h4><p>光依波長排開的結果。可見光只是電磁波中很小的一段。</p></div>
+   <div class="card"><div class="emoji">🧃</div><h4>吸收</h4><p>顏色＝沒被吃掉的光。越濃吃越多，吸光度與濃度成正比。</p></div>
+   <div class="card"><div class="emoji">📈</div><h4>檢量線</h4><p>量吸光度 → 對回直線 → 算出濃度。硼砂案，破！</p></div>
+  </div>
+  <p class="sub" style="margin-top:16px">☕ 下半場預告：奶粉和雞蛋的案子，要靠<b class="accent">「分子在跳舞」</b>來破。</p>
+ </div>
+</section>
+
+<section class="slide" data-section="維持注意" data-min="3" data-name="🎬 動畫③ 分子在跳舞">
+ <div class="slide-inner">
+  <div class="kicker">語音動畫 ③ · 關卡 3</div>
+  <h2 class="h2">分子在跳舞：指紋是怎麼來的？</h2>
+  <div class="anim" data-anim="a3">
+   <svg class="stage" viewBox="0 0 900 380" role="img" aria-label="化學鍵振動與分子指紋光譜的動畫">
+    <g data-from="0">
+     <circle cx="190" cy="80" r="22" fill="#ff8fab" class="vib vibA" style="--d:.42s"/><path d="M214 80 l8 -12 l12 24 l12 -24 l12 24 l12 -24 l12 24 l12 -24 l8 12" fill="none" stroke="#e5e7eb" stroke-width="4" class="vibS" style="--d:.42s"/><circle cx="330" cy="80" r="22" fill="#8fb3ff" class="vib vibB" style="--d:.42s"/>
+    </g>
+    <g data-from="1">
+     <text x="260" y="124" text-anchor="middle" class="sm">彈簧緊 → 振動快</text>
+     <circle cx="190" cy="190" r="22" fill="#ffd60a" class="vib vibA" style="--d:.8s"/><path d="M214 190 l8 -12 l12 24 l12 -24 l12 24 l12 -24 l12 24 l12 -24 l8 12" fill="none" stroke="#e5e7eb" stroke-width="4" class="vibS" style="--d:.8s"/><circle cx="330" cy="190" r="22" fill="#8fb3ff" class="vib vibB" style="--d:.8s"/>
+     <text x="260" y="234" text-anchor="middle" class="sm">中等</text>
+     <circle cx="190" cy="300" r="28" fill="#34c759" class="vib vibA" style="--d:1.4s"/><path d="M220 300 l7 -12 l11 24 l11 -24 l11 24 l11 -24 l11 24 l11 -24 l7 12" fill="none" stroke="#e5e7eb" stroke-width="4" class="vibS" style="--d:1.4s"/><circle cx="330" cy="300" r="28" fill="#bf5af2" class="vib vibB" style="--d:1.4s"/>
+     <text x="260" y="350" text-anchor="middle" class="sm">彈簧鬆、原子重 → 振動慢</text>
+    </g>
+    <g data-from="2" data-to="3">
+     <path data-wave="20,190,130,12,26" fill="none" stroke="#ff6b6b" stroke-width="4" class="travel"/>
+     <text x="24" y="164" class="sm" style="fill:#ff9d9d">紅外光</text>
+     <rect x="156" y="152" width="208" height="76" rx="14" fill="none" stroke="#ffd60a" stroke-width="3" stroke-dasharray="6 6"/>
+     <text x="372" y="182" class="sm" style="fill:#ffd60a">頻率相同</text><text x="372" y="202" class="sm" style="fill:#ffd60a">→ 吸收！</text>
+    </g>
+    <g data-from="2">
+     <rect x="470" y="40" width="410" height="290" rx="14" fill="#151a3d" stroke="#4a5680"/>
+     <line x1="500" y1="290" x2="860" y2="290" stroke="#7a8bb8" stroke-width="2"/><line x1="500" y1="290" x2="500" y2="64" stroke="#7a8bb8" stroke-width="2"/>
+     <text x="680" y="318" text-anchor="middle" class="sm">振動頻率（波數）→</text><text x="486" y="60" class="sm">吸收</text>
+    </g>
+    <g data-from="2" data-to="2"><path data-curve="500,290,360,200|.5:.8:.035" fill="none" stroke="#ffd60a" stroke-width="4" class="draw"/><text x="680" y="110" text-anchor="middle" class="lbl">一個鍵 → 一個峰</text></g>
+    <g data-from="3"><path data-curve="500,290,360,200|.1:.45:.03,.24:.9:.025,.36:.3:.03,.5:.8:.035,.66:.55:.03,.8:.95:.025,.9:.35:.03" fill="none" stroke="#5ee0ff" stroke-width="4" class="draw"/></g>
+    <g data-from="3" data-to="3"><text x="680" y="72" text-anchor="middle" class="lbl">很多鍵 → 很多峰 ＝ 分子指紋</text></g>
+    <g data-from="4">
+     <path data-curve="500,284,360,200|.1:.45:.03,.24:.9:.025,.36:.3:.03,.5:.8:.035,.66:.55:.03,.8:.95:.025,.9:.35:.03" fill="none" stroke="#34c759" stroke-width="3" stroke-dasharray="7 7"/>
+     <rect x="556" y="48" width="248" height="38" rx="19" fill="#34c759"/><text x="680" y="74" text-anchor="middle" class="lbl" style="fill:#0d1024">✔ 和資料庫比對成功</text>
+    </g>
+   </svg>
+   <div class="cap"></div><div class="ctl"></div>
+  </div>
+ </div>
+</section>
+
+<section class="slide" data-section="維持注意" data-min="5" data-name="案例② 近紅外看雞蛋">
+ <div class="slide-inner">
+  <div class="kicker">案例 ② · 近紅外光譜 · 懸案三</div>
+  <h2 class="h2">不打破蛋殼，也能知道蛋放了幾天</h2>
+  <div class="grid2">
+   <div>
+    <p class="body">科學家拿一支<b>手持式近紅外光譜儀</b>對著蛋殼照，波長 740–1070 奈米——比紅光再長一點，眼睛看不到。</p>
+    <div class="grid3" style="margin:12px 0"><div class="card"><div class="readout">30</div><p>顆褐殼蛋</p></div><div class="card"><div class="readout">0–21</div><p>天，每天追蹤</p></div><div class="card"><div class="readout">660</div><p>筆光譜</p></div></div>
+    <p class="body">蛋放越久，裡面的水分和蛋白質會改變，光譜也跟著改變。把 660 筆光譜交給電腦學習，就能<b class="hl">由光譜預測天數</b>。</p>
+    <p class="small" style="margin-top:8px">📌 論文指出：室溫（約 23°C）下，雞蛋大約可存放 14 天。</p>
+   </div>
+   <div class="card"><svg id="eggSvg" viewBox="0 0 520 280"></svg><div class="chips" id="eggBtns" style="margin-top:6px"></div><p class="body" id="eggTxt" style="min-height:3.2em;margin-top:6px">👆 點上面的三個按鈕，看看每個波段在「看」什麼。</p><p class="note">示意圖：三個波段位置取自課程教材，曲線形狀為簡化示意。</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="slide" data-section="維持注意" data-min="5" data-name="案例③ 拉曼抓三聚氰胺">
+ <div class="slide-inner">
+  <div class="kicker">案例 ③ · 拉曼光譜 · 懸案二</div>
+  <h2 class="h2">奶粉裡多了一個峰：三聚氰胺現形</h2>
+  <div class="grid2">
+   <div class="card"><svg id="melSvg" viewBox="0 0 560 300"></svg><p class="note">示意圖：峰位取自課程教材的食品成分拉曼指紋表，峰形與雜訊為模擬。</p></div>
+   <div>
+    <div class="small">奶粉裡摻入三聚氰胺的比例</div><div class="readout" id="melVal"></div>
+    <input type="range" id="melRange" min="0" max="5" step="0.1" value="0" aria-label="摻混比例滑桿">
+    <p class="body" id="melTxt" style="min-height:4.6em;font-weight:700;margin-top:4px"></p>
+    <div class="gate"><button class="btn primary" data-reveal="r15">💬 猜猜看：拉曼能驗到法規要求的濃度嗎？ →</button></div>
+    <div class="reveal card" id="r15"><p class="body">一般拉曼大約要摻到 <b>0.5%（約 5,000 mg/kg）</b>才看得出來；但國際食品標準對嬰兒奶粉的限量是 <b>1 mg/kg</b>。所以拉曼適合<b class="hl">現場快篩</b>，抓明目張膽的摻假；要確認是否符合法規，還得靠更靈敏的儀器。</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="slide" data-section="維持注意" data-min="7" data-name="🎮 遊戲③ 指紋比對">
+ <div class="slide-inner"><div class="kicker">小遊戲 ③ · 關卡 3</div><h2 class="h2">指紋比對：未知樣品是誰？</h2><div id="g3"></div></div>
+</section>
+
+<section class="slide" data-section="維持注意" data-min="3" data-name="🎬 動畫④ 元素指紋 XRF">
+ <div class="slide-inner">
+  <div class="kicker">語音動畫 ④ · 關卡 4</div>
+  <h2 class="h2">元素也有指紋：X 光螢光（XRF）</h2>
+  <div class="anim" data-anim="a4">
+   <svg class="stage" viewBox="0 0 900 380" role="img" aria-label="X 光螢光原理動畫">
+    <g data-from="0">
+     <circle cx="220" cy="190" r="145" fill="none" stroke="#3a4680" stroke-width="2"/><circle cx="220" cy="190" r="100" fill="none" stroke="#3a4680" stroke-width="2"/><circle cx="220" cy="190" r="55" fill="none" stroke="#3a4680" stroke-width="2"/>
+     <circle cx="220" cy="190" r="20" fill="#ff7a59" class="pulse"/><text x="220" y="196" text-anchor="middle" class="sm" style="fill:#0d1024;font-weight:900">核</text>
+     <g fill="#5ee0ff"><circle cx="181" cy="229" r="8"/><circle cx="149" cy="261" r="8"/><circle cx="134" cy="140" r="8"/><circle cx="306" cy="240" r="8"/><circle cx="220" cy="45" r="8"/><circle cx="94" cy="262" r="8"/><circle cx="346" cy="262" r="8"/></g>
+     <text x="220" y="364" text-anchor="middle" class="sm">一層一層的電子</text>
+    </g>
+    <circle data-from="0" data-to="0" cx="259" cy="151" r="8" fill="#5ee0ff"/>
+    <circle data-from="0" data-to="1" cx="291" cy="119" r="8" fill="#5ee0ff"/>
+    <g data-from="1" data-to="1">
+     <path data-wave="20,151,220,11,16" fill="none" stroke="#bf5af2" stroke-width="4" class="travel"/><text x="24" y="128" class="lbl" style="fill:#d6a8ff">X 光</text>
+     <circle cx="259" cy="151" r="10" fill="none" stroke="#ffd60a" stroke-width="2.5" stroke-dasharray="4 4"/><text x="272" y="176" class="sm" style="fill:#ffd60a">空位</text>
+    </g>
+    <circle data-from="1" data-to="1" cx="259" cy="151" r="8" fill="#5ee0ff" class="fly"/>
+    <circle data-from="2" cx="291" cy="119" r="8" fill="#ffd60a" class="drop" style="--tx:-32px;--ty:32px"/>
+    <g data-from="2"><path data-wave="286,151,160,11,20" fill="none" stroke="#ffd60a" stroke-width="4" class="travel"/><text x="330" y="128" class="lbl" style="fill:#ffd60a">特徵 X 光</text></g>
+    <g data-from="3">
+     <rect x="470" y="40" width="410" height="290" rx="14" fill="#151a3d" stroke="#4a5680"/>
+     <line x1="500" y1="290" x2="860" y2="290" stroke="#7a8bb8" stroke-width="2"/><line x1="500" y1="290" x2="500" y2="64" stroke="#7a8bb8" stroke-width="2"/>
+     <text x="680" y="318" text-anchor="middle" class="sm">能量（keV）→</text>
+     <path data-curve="500,290,360,190|.218:.85:.014,.282:.55:.014,.733:.7:.016" fill="none" stroke="#ffd60a" stroke-width="4" class="draw"/>
+     <text x="574" y="118" text-anchor="end" class="lbl">鉀 3.31</text><text x="606" y="176" class="lbl">鈣 3.69</text><text x="764" y="146" text-anchor="middle" class="lbl">鐵 6.40</text>
+    </g>
+    <g data-from="4">
+     <text x="680" y="350" text-anchor="middle" class="lbl" style="fill:#5ee0ff">↔ 位置 ＝ 哪一種元素</text>
+     <text x="846" y="110" text-anchor="end" class="lbl" style="fill:#ff8fab">↕ 高度 ＝ 含量</text>
+     <text x="790" y="250" font-size="40">🍯🍅</text>
+    </g>
+   </svg>
+   <div class="cap"></div><div class="ctl"></div>
+  </div>
+ </div>
+</section>
+
+<section class="slide" data-section="維持注意" data-min="6" data-name="🎮 遊戲④ 元素解碼">
+ <div class="slide-inner"><div class="kicker">小遊戲 ④ · 關卡 4</div><h2 class="h2">元素解碼：這份樣品裡有哪些元素？</h2><div id="g4"></div></div>
+</section>
+
+<!-- ============ 喚起行動 ============ -->
+<section class="slide" data-section="喚起行動" data-min="3" data-name="光譜 × 電腦">
+ <div class="slide-inner">
+  <div class="kicker">延伸 · 光譜 × 電腦</div>
+  <h2 class="h2">人眼分不出來？交給電腦</h2>
+  <div class="grid2">
+   <div>
+    <p class="body">一條光譜就是幾百個數字。兩種咖啡的紅外光譜疊在一起，人眼幾乎看不出差別。</p>
+    <div class="grid3" style="margin:12px 0"><div class="card"><div class="readout">56</div><p>支即溶咖啡</p></div><div class="card"><div class="readout">286</div><p>個數字／每條光譜</p></div><div class="card"><div class="readout">100%</div><p>品種分對</p></div></div>
+    <button class="btn primary" id="aiBtn">🤖 讓電腦找出差異</button>
+    <p class="body" id="aiTxt" style="margin-top:8px;min-height:3.2em"></p>
+   </div>
+   <div class="card"><svg id="aiSvg" viewBox="0 0 520 320"></svg><p class="note">示意圖。數字取自課程網站 FTIR 咖啡教材（Arabica 29 支、Robusta 27 支）。</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="slide" data-section="喚起行動" data-min="2" data-name="四種工具比一比">
+ <div class="slide-inner">
+  <div class="kicker">選對工具</div>
+  <h2 class="h2">四種光的工具，比一比</h2>
+  <table class="cmp">
+   <thead><tr><th>工具</th><th>用什麼光</th><th>光做了什麼</th><th>看得到什麼</th><th>今天的案子</th></tr></thead>
+   <tbody>
+    <tr><td>🧪 分光光度計</td><td>可見光</td><td>被吸收</td><td>有顏色的物質有多濃</td><td>魚丸裡的硼砂（550 奈米）</td></tr>
+    <tr><td>🥚 近紅外光譜</td><td>近紅外光</td><td>被吸收</td><td>水、油脂、蛋白質的變化</td><td>雞蛋放了幾天</td></tr>
+    <tr><td>🕺 拉曼／紅外光譜</td><td>雷射／紅外光</td><td>散射／吸收</td><td>分子指紋：是哪種分子</td><td>奶粉三聚氰胺、咖啡品種、微塑膠</td></tr>
+    <tr><td>⚛️ X 光螢光 XRF</td><td>X 光</td><td>激發後放射</td><td>元素指紋：有哪些元素</td><td>蜂蜜真假、番茄產地</td></tr>
+   </tbody>
+  </table>
+  <p class="sub" style="margin-top:14px">共同點：<b class="hl">快、通常不破壞樣品</b>。差別在於——你想問的是「有多濃」、「是哪種分子」，還是「有哪些元素」？</p>
+ </div>
+</section>
+
+<!-- ============ 喚起行動 ============ -->
+<section class="slide" data-section="喚起行動" data-min="4" data-name="🎮 遊戲⑤ 辦案派工">
+ <div class="slide-inner"><div class="kicker">小遊戲 ⑤ · 關卡 5</div><h2 class="h2">辦案派工：這個案子該派哪一種工具？</h2><div id="g5"></div></div>
+</section>
+
+<section class="slide" data-section="喚起行動" data-min="2" data-name="回家任務">
+ <div class="slide-inner">
+  <div class="kicker">帶得走的行動</div>
+  <h2 class="title">你身邊就有<span class="accent">光譜儀</span></h2>
+  <div class="grid4">
+   <div class="card"><div class="emoji">🩸</div><h4>血氧機</h4><p>用紅光和紅外光照手指，看血液吸收多少。</p></div>
+   <div class="card"><div class="emoji">🌡️</div><h4>額溫槍</h4><p>接收你皮膚放出的紅外線。</p></div>
+   <div class="card"><div class="emoji">💵</div><h4>驗鈔燈</h4><p>紫外線照下去，防偽油墨會發出螢光。</p></div>
+   <div class="card"><div class="emoji">💿</div><h4>光碟片</h4><p>表面的細紋能把白光拆成彩虹，就像三稜鏡。</p></div>
+  </div>
+  <div class="card" style="margin-top:16px;border-color:var(--accent)"><h4>🏠 回家任務：自製光碟光譜儀</h4><p class="body">拿一片舊光碟，分別對著 <b>太陽光、日光燈、手機手電筒</b>，用手機拍下反射出來的彩虹。三道彩虹長得一樣嗎？哪一種光的彩虹是「一條一條斷開」的？下次上課來破案。</p></div>
+ </div>
+</section>
+
+<section class="slide" data-section="喚起行動" data-min="6" data-name="🏅 結業測驗">
+ <div class="slide-inner"><div class="kicker">關卡 5 · 結業測驗 · 10 題</div><h2 class="h2">光的偵探社 · 結業測驗</h2><div id="quiz"></div></div>
+</section>
+
+<section class="slide" data-section="喚起行動" data-min="1" data-name="今天我學會了">
+ <div class="slide-inner">
+  <div class="kicker">自我檢核</div>
+  <h2 class="h2">今天，你應該能做到這些（做得到就打勾）</h2>
+  <div class="grid2" style="align-items:start">
+   <div class="check">
+    <label><input type="checkbox">說出「光譜」是什麼，並舉出可見光以外的兩種光</label>
+    <label><input type="checkbox">解釋為什麼葉子是綠色的</label>
+    <label><input type="checkbox">用檢量線，由吸光度算出濃度</label>
+    <label><input type="checkbox">說明為什麼分子光譜像「指紋」</label>
+    <label><input type="checkbox">看 XRF 能譜的峰位，判斷有哪些元素</label>
+   </div>
+   <div>
+    <div class="card"><h4>小遊戲總成績</h4><div class="readout" id="totalScore">—</div><p class="small" id="totalNote">完成各關小遊戲後，這裡會自動加總。</p></div>
+    <p class="body" style="margin-top:12px">想挑戰更進階的內容？到老師的課程網站繼續探索：</p>
+    <div class="links">
+     <a href="https://tai-shengyeh.github.io/microplastic-teaching/" target="_blank" rel="noopener">微塑膠 × 食品安全</a>
+     <a href="https://tai-shengyeh.github.io/ramanspy-food-analysis/teaching.html" target="_blank" rel="noopener">拉曼摻偽鑑別</a>
+     <a href="https://tai-shengyeh.github.io/nir-egg-freshness/" target="_blank" rel="noopener">近紅外 · 雞蛋新鮮度</a>
+     <a href="https://tai-shengyeh.github.io/xrf-food-analysis/" target="_blank" rel="noopener">X 光螢光</a>
+     <a href="https://tai-shengyeh.github.io/food-analysis-decks/tfda_boric_soil/index.html" target="_blank" rel="noopener">食品中硼酸</a>
+     <a href="https://tai-shengyeh.github.io/ftir-food-analysis/teaching.html" target="_blank" rel="noopener">紅外光譜 · 咖啡</a>
+    </div>
+    <p class="sub" style="margin-top:14px">下次看到彩虹，記得：<b class="accent">那是光在自我介紹。</b></p>
+   </div>
+  </div>
+ </div>
+</section>
